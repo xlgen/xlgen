@@ -10,7 +10,7 @@ func Test_sitespec_loadFromDir(t *testing.T) {
 		t.Fatalf("load error: %s", loadErr)
 		return
 	}
-	if len(s.pages) != 2 {
+	if len(s.pages) != 3 {
 		t.Errorf("expected 2 pages but found %d", len(s.pages))
 	}
 }
