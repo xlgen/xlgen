@@ -52,5 +52,9 @@ freshly generated files.
 
 ## To-Dos
 
+xlgen is work in progress, so do not expect too much ;)
+
+Features I am intending to add include:
+
 - Templating
 - Link prefixing
