@@ -175,8 +175,12 @@ func (p *pagespec) toHTML(locale string) (doc *html.Node, err error) {
 		return nil, errors.New("toHTML called on empty pagespec")
 	}
 	doc = &html.Node{Type: html.DocumentNode}
-	doc.AppendChild(&html.Node{Type: html.DoctypeNode, Data: "html", Attr: []html.Attribute{{Key: "lang", Val: locale}}})
+	doc.AppendChild(&html.Node{Type: html.DoctypeNode, Data: "html"})
 	htmlElem, err := p.root.toHTMLNode(locale, p.locales)
+	if err != nil {
+		return nil, err
+	}
+	htmlElem.Attr = append(htmlElem.Attr, html.Attribute{Key: "lang", Val: locale})
 	doc.AppendChild(htmlElem)
 	return
 }

@@ -260,7 +260,7 @@ func Test_pagespec_writeLocale(t *testing.T) {
 	}
 }
 
-const indexHTMLen = `<!DOCTYPE html><html><head><title>Test Page</title><link rel="stylesheet" href="/style.css"/></head><body><h1>Welcome</h1><p>This is some text.</p><footer><a href="/imprint">Imprint</a></footer></body></html>`
-const indexHTMLde = `<!DOCTYPE html><html><head><title>Testseite</title><link rel="stylesheet" href="/style.css"/></head><body><h1>Willkommen</h1><p>Dies ist etwas Text.</p><footer><a href="/imprint">Impressum</a></footer></body></html>`
-const imprintHTMLen = `<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="/style.css"/></head><body><h1>Imprint</h1></body></html>`
-const imprintHTMLde = `<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="/style.css"/></head><body><h1>Impressum</h1></body></html>`
+const indexHTMLen = `<!DOCTYPE html><html lang="en"><head><title>Test Page</title><link rel="stylesheet" href="/style.css"/></head><body><h1>Welcome</h1><p>This is some text.</p><footer><a href="/imprint">Imprint</a></footer></body></html>`
+const indexHTMLde = `<!DOCTYPE html><html lang="de"><head><title>Testseite</title><link rel="stylesheet" href="/style.css"/></head><body><h1>Willkommen</h1><p>Dies ist etwas Text.</p><footer><a href="/imprint">Impressum</a></footer></body></html>`
+const imprintHTMLen = `<!DOCTYPE html><html lang="en"><head><title></title><link rel="stylesheet" href="/style.css"/></head><body><h1>Imprint</h1></body></html>`
+const imprintHTMLde = `<!DOCTYPE html><html lang="de"><head><title></title><link rel="stylesheet" href="/style.css"/></head><body><h1>Impressum</h1></body></html>`
